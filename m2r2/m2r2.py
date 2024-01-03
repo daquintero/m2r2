@@ -1,17 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
 from __future__ import print_function, unicode_literals
-
 import mistune
 from pkg_resources import get_distribution
-
 from .constants import PROLOG
-from .rst.parser import RestBlockParser, RestInlineParser
-from .rst.renderer import RestRenderer
+from .rst_parser import RestBlockParser, RestInlineParser
+from .rst_renderer import RestRenderer
 
 __version__ = get_distribution("m2r2").version
 
+print("at M2R")
 
 class M2R(mistune.Markdown):
     def __init__(self, renderer=None, block=None, inline=None, plugins=None):
