@@ -7,9 +7,7 @@ from .constants import PROLOG
 from .rst_parser import RestBlockParser, RestInlineParser
 from .rst_renderer import RestRenderer
 
-__version__ = get_distribution("m2r2").version
-
-print("at M2R")
+__version__ = get_distribution("m2r3").version
 
 class M2R(mistune.Markdown):
     def __init__(self, renderer=None, block=None, inline=None, plugins=None):

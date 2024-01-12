@@ -7,8 +7,8 @@ from unittest import TestCase, skip
 
 from docutils import io
 from docutils.core import Publisher
-from m2r2 import convert
-from m2r2.constants import PROLOG
+from m2r3 import convert
+from m2r3.constants import PROLOG
 
 
 class RendererTestBase(TestCase):

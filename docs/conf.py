@@ -16,7 +16,7 @@
 import os
 import sys
 
-from m2r2 import __version__ as __m2r2_version__
+from m2r3 import __version__ as __m2r2_version__
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -38,7 +38,7 @@ extensions = [
     "sphinx.ext.mathjax",
     "sphinx.ext.viewcode",
     "sphinx.ext.githubpages",
-    "m2r2",
+    "m2r3",
 ]
 
 
@@ -134,7 +134,7 @@ html_theme = "alabaster"
 html_theme_options = {
     "description": "Markdown mixed to reST",
     "github_user": "CrossNox",
-    "github_repo": "m2r2",
+    "github_repo": "m2r3",
     "github_banner": True,
     "github_type": "mark",
     "github_count": False,

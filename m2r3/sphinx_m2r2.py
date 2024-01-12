@@ -6,7 +6,7 @@ _is_sphinx = False
 
 
 def setup(app):
-    print("m2r2 setup.")
+    print("m2r3 setup.")
     """When used for sphinx extension."""
     global _is_sphinx
     _is_sphinx = True
