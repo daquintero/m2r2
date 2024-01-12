@@ -26,7 +26,7 @@ the original readme, changing only what's needed to work with `m2r2`.
 
 - IMPORTANT NOTE: it doesn't fully work, it just mostly works and I intend to keep adding any PRs that come my way. Not all the old functionality is there, but it's mostly there and builds.
 - Updated packaging to poetry, because it was a big pain to reproduce the original package development and this way it's easier to have a reproducible working environment.
-- Works with the latest sphinx versions and mistune v2
+- Update python to the present, works with the latest sphinx versions and mistune v2.
 
 ## Why another converter?
 
