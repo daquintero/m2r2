@@ -10,7 +10,7 @@ from copy import copy
 from unittest import TestCase
 import subprocess
 import six
-from m2r2.cli.m2r2 import parse_from_file, main, options
+from m2r3.cli.m2r2 import parse_from_file, main, options
 
 from unittest.mock import patch
 
@@ -41,7 +41,7 @@ class TestConvert(TestCase):
 
     def test_no_file(self):
         p = subprocess.Popen(
-            [sys.executable, "-m", "m2r2"],
+            [sys.executable, "-m", "m2r3"],
             stdout=subprocess.PIPE,
         )
         p.wait()

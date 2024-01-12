@@ -1,4 +1,4 @@
-M2R2
+M2R3
 ====
 
 [![PyPI](https://img.shields.io/pypi/v/m2r2.svg)](https://pypi.python.org/pypi/m2r2)
@@ -11,11 +11,22 @@ M2R2
 M2R2 converts a markdown file including reStructuredText (rst) markups to a valid
 rst format.
 
-## M2R: the original
-M2R2 is a fork of [m2r](https://github.com/miyakogi/m2r) which hasn't been updated for a long time
-and there's been no response from the author about a PR fixing a serious issue that broke several
+## M2R3: "The Empire Strikes Back"
+M2R3 is a fork of [m2r](https://crossnox.github.io/m2r2) which is a fork of [m2r](https://github.com/miyakogi/m2r).
+
+The reason for m2r3 is that: 
+> Unfortunately I'm going to have to release our version to pypi as we need it to build our project for an urgent release (we were using poetry git= requirements before) but doesn't work on pypi release. Happy to take it down if we integrate the changes and deploy a newer version of m2r2.
+
+From `m2r2` to `m2r`:
+> They hadn't been updated for a long time and there's been no response from the author about a PR fixing a serious issue that broke several
 pipelines using `sphinx3`. Every `m2r` config should work out of the box. I've changed some of the tooling for what I'm mostly using now. Below goes
 the original readme, changing only what's needed to work with `m2r2`.
+
+### Main Updates in `m2r3`:
+
+- IMPORTANT NOTE: it doesn't fully work, it just mostly works and I intend to keep adding any PRs that come my way. Not all the old functionality is there, but it's mostly there and builds.
+- Updated packaging to poetry, because it was a big pain to reproduce the original package development and this way it's easier to have a reproducible working environment.
+- Works with the latest sphinx versions and mistune v2
 
 ## Why another converter?
 
@@ -50,22 +61,16 @@ a code block in HTML like `see <code>ref</code>_`, which is not expected.
 
 ## Installation
 
-Python 2.7 or Python 3.4+ is required.
+TODO update more than here.
 
 ```
-pip install m2r2
+pip install m2r3
 ```
 
 Or
 
 ```
-python3 -m pip install m2r2
-```
-
-or using `conda`
-
-```
-conda install -c conda-forge m2r2
+python3 -m pip install m2r3
 ```
 
 ## Usage
@@ -86,7 +91,8 @@ Import `m2r2.convert` function and call it with markdown text.
 Then it will return converted text.
 
 ```python
-from m2r2 import convert
+from m2r3 import convert
+
 rst = convert('# Title\n\nSentence.')
 print(rst)
 # Title
@@ -99,7 +105,8 @@ Or, use `parse_from_file` function to load markdown file and obtain converted
 text.
 
 ```python
-from m2r2 import parse_from_file
+from m2r3 import parse_from_file
+
 output = parse_from_file('markdown_file.md')
 ```
 
@@ -109,16 +116,17 @@ PyPI as rst format.
 ```python
 readme_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'README.md')
 try:
-    from m2r2 import parse_from_file
-    readme = parse_from_file(readme_file)
+  from m2r3 import parse_from_file
+
+  readme = parse_from_file(readme_file)
 except ImportError:
-    # m2r2 may not be installed in user environment
-    with open(readme_file) as f:
-        readme = f.read()
+  # m2r3 may not be installed in user environment
+  with open(readme_file) as f:
+    readme = f.read()
 setup(
-    ...,
-    long_description=readme,
-    ...,
+  ...,
+  long_description=readme,
+  ...,
 )
 ```
 
@@ -129,7 +137,7 @@ In your conf.py, add the following lines.
 ```python
 extensions = [
     ...,
-    'm2r2',
+    'm2r3',
 ]
 
 # source_suffix = '.rst'
