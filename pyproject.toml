@@ -7,6 +7,9 @@ authors = [
     "CrossNox <ijmermet+m2r2@gmail.com>",
     "daquintero <dario a quintero at gmail dot com>"
 ]
+maintainers = [
+    "daquintero <dario a quintero at gmail dot com>"
+]
 homepage = "http://www.sphinx-doc.org/"
 license = "MIT" # Replace with your project's license, if different
 classifiers = [
@@ -34,6 +37,7 @@ m2r2 = "m2r2:main"
 python = ">=3.9"
 mistune = ">=2.0.0,<3.0"
 docutils = ">=0.16,<1.0"
+pydantic = "^2"
 
 # Testing and linting
 black = {version="22.3.0", optional=true}

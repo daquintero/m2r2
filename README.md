@@ -1,18 +1,17 @@
 M2R3
 ====
 
-[![PyPI](https://img.shields.io/pypi/v/m2r2.svg)](https://pypi.python.org/pypi/m2r2)
-[![PyPI version](https://img.shields.io/pypi/pyversions/m2r2.svg)](https://pypi.python.org/pypi/m2r2)
-[![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg)](https://crossnox.github.io/m2r2)
-![Python package](https://github.com/CrossNox/m2r2/workflows/Python%20package/badge.svg)
+[![PyPI](https://img.shields.io/pypi/v/m2r3.svg?style=for-the-badge)](https://pypi.python.org/pypi/m2r2)
+[![PyPI version](https://img.shields.io/pypi/pyversions/m2r3.svg?style=for-the-badge)](https://pypi.python.org/pypi/m2r3)
+[![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg?style=for-the-badge)](https://daquintero.github.io/m2r3)
 
 --------------------------------------------------------------------------------
 
-M2R2 converts a markdown file including reStructuredText (rst) markups to a valid
+M2R3 converts a markdown file including reStructuredText (rst) markups to a valid
 rst format.
 
-## M2R3: "The Empire Strikes Back"
-M2R3 is a fork of [m2r](https://crossnox.github.io/m2r2) which is a fork of [m2r](https://github.com/miyakogi/m2r).
+## M2R3: "The Return of the Jedi"
+M2R3 is a fork of [m2r2](https://crossnox.github.io/m2r2) which is a fork of [m2r](https://github.com/miyakogi/m2r).
 
 The reason for m2r3 is that: 
 > Unfortunately I'm going to have to release our version to pypi as we need it to build our project for an urgent release (we were using poetry git= requirements before) but doesn't work on pypi release. Happy to take it down if we integrate the changes and deploy a newer version of m2r2.
@@ -27,7 +26,10 @@ the original readme, changing only what's needed to work with `m2r2`.
 - IMPORTANT NOTE: it doesn't fully work, it just mostly works and I intend to keep adding any PRs that come my way. Not all the old functionality is there, but it's mostly there and builds.
 - Updated packaging to poetry, because it was a big pain to reproduce the original package development and this way it's easier to have a reproducible working environment.
 - Update python to the present, works with the latest sphinx versions and mistune v2.
+- Integration of pydantic for type checking and validation of the docstrings.
 
+
+# Old Documentation
 ## Why another converter?
 
 I wanted to write sphinx document in markdown, since it's widely used now and
