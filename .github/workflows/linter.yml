@@ -6,14 +6,20 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python 3.7
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.7
-    - name: Install nox
-      run: pip install nox
-    - name: Install dependencies
-      run: pip install -r requirements-dev.txt
-    - name: Run cop session
-      run: nox --sessions cop
+      - uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x  # Replace 'x' with your desired Python version
+
+      - name: Install Poetry
+        run: |
+          curl -sSL https://install.python-poetry.org | python -
+          export PATH="$HOME/.local/bin:$PATH"
+
+      - name: Install project dependencies (including dev)
+        run: poetry install
+
+      - name: Run linters and formatters
+        run: poetry run pre-commit run --all-files
