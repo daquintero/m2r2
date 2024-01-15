@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dc13afa-14b0-4d64-a848-dea06aab792d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/m2r2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/m2r2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m2r3/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/m2r3/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m2r3/cli/m2r2.py" beforeDir="false" afterPath="$PROJECT_DIR$/m2r3/cli/m2r2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m2r3/directives.py" beforeDir="false" afterPath="$PROJECT_DIR$/m2r3/directives.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m2r3/m2r2.py" beforeDir="false" afterPath="$PROJECT_DIR$/m2r3/m2r3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m2r3/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/m2r3/parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m2r3/sphinx_m2r2.py" beforeDir="false" afterPath="$PROJECT_DIR$/m2r3/sphinx_m2r2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +73,7 @@
       <workItem from="1703681878094" duration="7005000" />
       <workItem from="1704276080142" duration="10450000" />
       <workItem from="1705052475859" duration="6169000" />
-      <workItem from="1705074001822" duration="4232000" />
+      <workItem from="1705074001822" duration="6625000" />
     </task>
     <servers />
   </component>
