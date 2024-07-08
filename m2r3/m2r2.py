@@ -2,12 +2,12 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function, unicode_literals
 import mistune
-from pkg_resources import get_distribution
+import importlib.metadata as meta
 from .constants import PROLOG
 from .rst_parser import RestBlockParser, RestInlineParser
 from .rst_renderer import RestRenderer
 
-__version__ = get_distribution("m2r3").version
+__version__ = meta.version("m2r3")
 
 class M2R(mistune.Markdown):
     def __init__(self, renderer=None, block=None, inline=None, plugins=None):
